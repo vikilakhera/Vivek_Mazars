@@ -1,0 +1,42 @@
+@import '~antd/dist/antd.css';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #f0f0f0;
+}
+
+.home,
+.services,
+.reports,
+.contact,
+.events,
+.support {
+  display: block;
+  margin-left: 260px;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px){
+  .home,
+  .services,
+  .reports,
+  .contact,
+  .events,
+  .support {
+    display: block;
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px){
+  .searchBar{
+    margin-bottom: 10px;
+    margin-left: 50px;
+    display: "flex"
+  }
+}

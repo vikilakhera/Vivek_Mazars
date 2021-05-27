@@ -1,0 +1,127 @@
+/* Cusomer Queries */
+
+.custQueries{
+    display: flex;
+    margin: 2% 90% 0 280px;
+    width: 81%;
+    z-index: 5;
+    flex-wrap: wrap;
+    padding-right: 2rem;
+}
+.custTable{
+    padding: 20px;
+    box-shadow: -10px 0 10px -8px rgb(156, 152, 152), 10px 0 10px -8px rgb(156, 152, 152);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.custHeader{ 
+  border-style: groove;
+  border-width: 1px 1px 0 1px;
+  display: flex;
+  width: 100%;
+  height: 55px;
+}
+
+.custHeader > h3{
+    margin: 15px 0 5px 5px;
+
+}
+
+.custHeader > button{
+    padding: auto;
+    margin: 5px 7% 5px 60rem;
+    background-color: #007bff;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 100px;
+
+}
+
+.custSearch{
+    width: 100%;
+    margin-top: 0;
+    height: 45px;
+}
+
+@media (max-width: 767px){
+    .custQueries,
+    .custHeader,
+    .custSearch,
+    .custTable
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .custHeader > button {
+        margin: 5px 0 5px 30px;
+    }
+}
+
+/* Customer Dashborad */
+.dashboard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    position: relative;
+    display: inline-block;
+    margin: 2rem 20px;
+    width: 30%;
+    height: 10%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    justify-content: center;
+}
+
+.box::after{
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+}
+
+.box:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.box:hover::after{
+    opacity: 1;
+}
+
+.box > h2{
+    padding: 15px;
+    color: rgb(88, 93, 97);
+}
+
+.box > h3{
+    text-align: right;
+    margin: 4rem 1rem 1rem 0;
+}
+
+@media(max-width: 767px){
+    .dashboard{
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Schedule */
+
+.custSchedule{
+    margin: 2rem 1rem 2rem 270px;
+}

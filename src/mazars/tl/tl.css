@@ -1,0 +1,76 @@
+/* tl_proposal_tabs */
+.tabs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* tl proposal table */
+.tl_table{
+    display: flex;
+    margin: 3rem 1.5rem 1rem 1rem;
+    padding: 20px;
+    box-shadow: -10px 0 10px -8px rgb(156, 152, 152), 10px 0 10px -8px rgb(156, 152, 152);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+/* tl edit-propossal */
+.form-wrap{
+    margin: 2.5rem 1.8rem 2rem 1.4rem; 
+}
+
+.nav{
+    display: flex;
+    font-size: 25px;
+    height: 65px;
+    border: solid 1px;
+    border-color: rgb(179, 184, 184, 0.5);
+    border-radius: 3px 3px 0 0;
+}
+.go-back{
+    margin: 10px 0 20px 15px;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    background-color: #28a745;
+    padding: 5px 10px;
+}
+.go-back:hover{
+    background-color: #218838;
+}
+.heading{
+    margin: 5px auto;
+}
+.form{
+    background-color: white;
+    padding: 20px 40px 40px 20px;
+}
+.form-input{
+    margin-top: 10px;
+    width: 100%;
+    padding: 4px 8px;
+    border-width: 1px;
+    border-color: rgb(151, 156, 156, 0.7);
+    border-radius: 3px;
+}
+.row{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.col{
+    height: 100px;
+    width: 100%;
+}
+.submit-btn{
+    margin-top: 2rem;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: solid 1px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+}
+.submit-btn:hover{
+    background-color: #0069d9;
+}
